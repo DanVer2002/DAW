@@ -1,0 +1,15 @@
+h1, h2, h3, nav, footer, .actions
+{
+    font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+}
+
+body
+{
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 100%;
+    background: url(../images/art-background4.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+
+}

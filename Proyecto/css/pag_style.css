@@ -6,7 +6,6 @@
 }
 
 body {
-    /* background-color: #ecf0f1; */
     background: rgb(236, 242, 248);
     color: #000000;
     font-family: 'Trebuchet MS', sans-serif;
@@ -57,7 +56,6 @@ body {
 }
 
 .content>.article {
-    /*background: #d1d5d9;*/
     padding: 20px;
     margin-top: 5px;
     color: #000000

@@ -1,0 +1,266 @@
+*{
+  box-sizing: border-box;;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roborto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2{font-size: 2.5rem;}
+h3{font-size: 2rem;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bitter";
+}
+
+p {
+  line-height: 25px;
+  font-size: 1.25em;
+}
+
+.section__title {
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+}
+.section__title:before {
+  content: "";
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #2E4053;
+}
+.welcome{
+  text-align: center;
+  padding: 100px;
+  max-width: 750px;
+  margin: auto;
+}
+.welcome__txt{
+  font-size: 1.2em;
+  color: #777;
+}
+.welcome__btn {
+  display: block;
+  border: 2px solid #2E4053;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: #2E4053;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.welcome__btn:hover {
+  background: #2E4053;
+  color: white;
+}
+
+.pages_btn {
+  display: block;
+  border: 2px solid #2E4053;
+  border-radius: 30px;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  background: #2E4053;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.pages_btn:hover {
+  background: none;
+  color: white;
+}
+
+
+#intro-tlaxcala{
+  text-align: center;
+  padding: 10px;
+}
+
+#nuestras-paginas{
+  background-color: #0B4252;
+  color: white;
+  text-align: center;
+}
+
+#nuestras-paginas{
+  padding: 150px 0px;
+}
+
+#nuestras-paginas h2{
+  margin-top: 0;
+}
+
+#nuestras-paginas p{
+  display: none;
+}
+
+#nuestras-paginas .banner{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+#nuestras-paginas h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+.banner:first-child{
+  background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("../images/prehistoria.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner:nth-child(2){
+  background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("../images/valquirico.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner:nth-child(3){
+  background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("../images/mixiote.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner:nth-child(4){
+  background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("../images/camadas.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.newsletter{
+  margin: 100px 0;
+}
+
+.form{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  max-width: 600px;
+}
+
+
+.form__mail, .form__nombre, .form__cel, .form__date, .form__ocp, .form__sex{
+  margin: 10px;
+  background: #ddd;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+}
+
+.form__btn{
+  align-content: center;
+  justify-content: space-between;
+}
+
+#reloj{
+  font-size: 2.5rem;
+}
+
+
+#evento{
+  text-align: center;
+  padding: 80px 12px;
+  color: white;
+  background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("../images/NAVIDAD-TLAX.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+@media (min-width: 720px){
+
+  #intro-tlaxcala{
+    display: flex;
+    justify-content: center;
+  }
+
+  #intro-tlaxcala .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #intro-tlaxcala h2{
+    margin-top: 0px;
+  }
+
+  #intro-tlaxcala .img{
+      background-size: cover;
+      background-position: center center;
+      height: 350px;
+      width: 250px;
+  }
+
+  #nuestras-paginas .paginas{
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestras-paginas p{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestras-paginas .banner{
+    padding: 30px;
+  }
+
+  .form__mail, .form__nombre, .form__cel, .form__date, .form__ocp, .form__sex{
+    width: 45%;
+  }
+
+  .form__submit{
+    width: 45%
+  }
+
+}

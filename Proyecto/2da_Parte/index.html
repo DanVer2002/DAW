@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-MX" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--<link rel="stylesheet" href="css/fontello.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="js/menu.js" defer></script>
+    <script type="text/javascript" src="js/slider.js" defer></script>
+    <script type="text/javascript" src="js/reloj.js" defer></script>
+    <title>Bienvenido a Tlaxcala</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container container--flex">
+        <h1 class="main-title"><span class="color-span">¡BIENVENIDO A</span> <span class="color-span-span">TLAXCALA!</span></h1>
+        <nav class="main-nav">
+          <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+          <ul class="menu" id="menu">
+            <li class="menu__item"><a href="#index.html" class="menu__link menu__link--select"><span><i class="fa-solid fa-house"></i> Inicio</span></a></li>
+            <li class="menu__item"><a href="#contactanos" class="menu__link"><span><i class="fa-solid fa-phone"></i> Contáctanos</span></a></li>
+            <li class="menu__item"><a href="#nuestras-paginas" class="menu__link"><span><i class="fa-solid fa-mountain-sun"></i> Páginas</span></a></li>
+            <li class="menu__item"><a href="tienda.html" class="menu__link"><span><i class="fa-solid fa-cart-shopping"></i> Tienda</span></a></li>
+            <li class="menu__item"><a href="login.html" class="menu__link"><span><i class="fa-solid fa-user"></i> Login</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="images/img1.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="images/img2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="images/img3.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__section">
+          <img src="images/img4.jpg" alt="" class="slider__img">
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+      <div class="slider__content">
+        <h2 class="slider__title">Conoce Tlaxcala y sus Maravillas</h2>
+        <p class="slider__txt">"Cuna de la nación"</p>
+        <form class="buscador" action="#" method="post">
+          <input class="busqueda" type="search" placeholder="Buscar">
+          <input class="boton" type="submit" value="&#10140;"/>
+        </form>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="welcome">
+        <h2 class="section__title">Conoce Tlaxcala</h2>
+        <p class="welcom__text">Tlaxcala es una ciudad con un gran acervo de historia; además posee una riqueza natural inigualablemente bella. La palabra Tlaxcala proviene del náhuatl tlaxcalli que quiere decir tortilla, pero que al combinar con la terminación tlān que denota "lugar de" forman Tlaxcallān, el sustantivo pasa a significar lugar de tortillas. Xicoténcatl es en honor al héroe tlaxcalteca que luchó contra la invasión española.</p>
+        <a href="" class="welcome__btn" >Leer más</a>
+      </section>
+
+
+      <section id="nuestras-paginas">
+        <h2>Conoce Tlaxcala a tráves del tiempo y de su cultura</h2>
+        <div class="paginas">
+          <div class="banner">
+            <h3>HISTORIA</h3>
+            <p>Aprende de la historia de Tlaxcala </p>
+            <a href="historia.html" class="pages_btn">Conoce más</a>
+          </div>
+
+          <div class="banner">
+            <h3>LUGARES</h3>
+            <p>Visita los lugares de Tlaxcala</p>
+            <a href="lugares.html" class="pages_btn">Conoce más</a>
+          </div>
+
+          <div class="banner">
+            <h3>COMIDA</h3>
+            <p>Enamorate de la comida de Tlaxcala</p>
+            <a href="comida.html" class="pages_btn">Conoce más</a>
+          </div>
+
+          <div class="banner">
+            <h3>ACTIVIDADES</h3>
+            <p>Conoce las actividades de Tlaxcala</p>
+            <a href="actividades.html" class="pages_btn">Conoce más</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactanos" class="newsletter">
+         <h2 class="section__title">CONTÁCTANOS</h2>
+         <form action="" method="post" class="form">
+           <div class="form__content">
+             <input type="text" placeholder="Nombre" class="form__nombre" required>
+             <input type="email" placeholder="Email" class="form__mail" required>
+             <input type="text" placeholder="Numero de telefono" class="form__cel" required>
+             <input type="text" placeholder="Ocupación" class="form__ocp"required>
+             <input type="text" placeholder="Edad" class="form__date" required>
+             <input type="text" placeholder="Genero" class="form__sex" required>
+             <input type="submit" name="" value="Enviar" class="welcome__btn">
+             <input type="reset" name="" value="Cancelar" class="welcome__btn">
+           </div>
+         </form>
+      </section>
+
+      <section id="evento">
+        <div>
+          <div class="img"></div>
+          <h2>No te pierdas proximamente la Villa Navideña en Tlaxcala</h2>
+          <p id="reloj"></p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="column column--50-25">
+          <h2 class="footer__title">¿Quiénes somos?</h2>
+          <p class="footer__txt">Somos jovenes Tlaxcaltecas que tuvieron la idea de dar a conocer el estado de tlaxcala, para que todo aquel que visitase la página web pueda entender lo marilloso que es el estado y sus xtraordinaria cultura que ofrece a México</p>
+          <cite class="footer__author">- Daniel, VR & Diana, QP</cite>
+        </div>
+        <div class="column column--50-25">
+          <h2 class="footer__title">Comentarios</h2>
+          <p class="footer__txt"><i class="fa-solid fa-thumbs-up"></i> Tlaxcala es un gran estado, lleno de maravillosos lugares, increible gastronomia y hermosas tradiciones.</p>
+
+          <p class="footer__txt"><i class="fa-solid fa-thumbs-down"></i> Tlaxcala NO existe.</p>
+
+        </div>
+        <div class="column column--50-25">
+          <h2 class="footer__title">Siguenos en las Redes</h2>
+          <div class="footer__socials">
+            <div class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+              <a class="social__link" href="">Facebook</a>
+            </div>
+            <div class="social-icon">
+              <i class="fab fa-twitter"></i>
+              <a class="social__link" href="">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <div class="column column--50-25">
+          <h2 class="footer__title">¿Quieres saber más?</h2>
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="contact__txt">Tlaxcala</p>
+          </div>
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+            <p class="contact__txt">(246) 46 5 29 60</p>
+          </div>
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+            <p class="contact__txt">secretaria.segob@tlaxcala.gob.mx</p>
+          </div>
+        </div>
+      </div>
+        <p class="copy">© 2022 Página de Tlaxcala. Todos los derechos reservados| IPN <span class="color-span">UPIIT</span></p>
+    </footer>
+
+  </body>
+</html>

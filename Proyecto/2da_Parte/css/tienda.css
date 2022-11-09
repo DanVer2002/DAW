@@ -1,0 +1,126 @@
+.main-title-form{
+  text-align: center;
+  color: #2E4053;
+}
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+/*.product:before {
+  content: "New";
+  background: #2E4053;
+  padding: 10px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: rotate(-90deg);
+  color: white;
+}*/
+
+.product__img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.product__title{
+  text-align: center;
+}
+.product__price {
+  color: #2E4053;
+  font-weight: bold;
+}
+.product__icon {
+  display: block;
+  margin-top: 10px;
+}
+.product:hover .product__icon {
+  color: #2E4053;
+}
+
+#show__buy{
+  padding: 20px;
+  margin:50px 0;
+  color: white;
+  background-color: #2E4053;
+}
+
+#todo{
+  text-align: center;
+  padding: 0;
+  max-width: 750px;
+  margin: auto;
+}
+
+#check{
+  text-align: center;
+  margin: auto;
+}
+
+.welcome__btn {
+  display: block;
+  border: 2px solid #2E4053;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: #2E4053;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.welcome__btn:hover {
+  background: #2E4053;
+  color: white;
+}
+
+/*Estilos para tablet*/
+@media screen and (min-width:768px) {
+  #divZonaCompra{
+    text-align: right;
+    padding: 0 200px;
+    max-width: 700px;
+    margin: auto;
+  }
+}
+/*Estilos para web*/
+
+@media screen and (min-width:1024px) {
+  .container{
+    width: 1000px;
+    margin: auto;
+  }
+
+  .container-products {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+  .product__img {
+    height: 150px;
+  }
+
+}
+
+@media screen and (min-width:1280px) {
+  .container{
+    width: 1200px;
+  }
+
+}
+
+@media screen and (min-width:1600px) {
+  .container{
+    width: 1500px;
+  }
+  .product__img {
+    height: 200px;
+  }
+}

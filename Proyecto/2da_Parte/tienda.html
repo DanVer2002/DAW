@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/menu2.css">
+    <script type="text/javascript" src="js/tienda.js" defer></script>
+    <script type="text/javascript" src="js/menu.js" defer></script>
+
+    <title>Tienda</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container container--flex">
+        <h1 class="main-title"><span class="color-span">¡BIENVENIDO A</span> <span class="color-span-span">TLAXCALA!</span></h1>
+        <nav class="main-nav">
+          <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+          <ul class="menu" id="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link"><span><i class="fa-solid fa-house"></i> Inicio</span></a></li>
+            <li class="menu__item"><a href="index.html #contactanos" class="menu__link"><span><i class="fa-solid fa-phone"></i> Contáctanos</span></a></li>
+            <li class="menu__item"><a href="index.html #nuestras-paginas" class="menu__link"><span><i class="fa-solid fa-mountain-sun"></i> Páginas</span></a></li>
+            <li class="menu__item"><a href="tienda.html" class="menu__link menu__link--select"><span><i class="fa-solid fa-cart-shopping"></i> Tienda</span></a></li>
+            <li class="menu__item"><a href="login.html" class="menu__link"><span><i class="fa-solid fa-user"></i> Login</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <form id="form">
+      <div class="container">
+        <h2 class="main-title-form"><i class="fa-sharp fa-solid fa-store"></i> LLEVATE UN RECUERDO </h2>
+        <section class="container-products">
+          <div class="product">
+            <img src="images/mascara.jpg" alt="" class="product__img">
+            <div class="product__description" id="div1" name="DIVS">
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+
+          <div class="product">
+            <img src="images/poncho.jpg" alt="" class="product__img">
+            <div class="product__description" id="div2" name="DIVS">
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+
+          <div class="product">
+            <img src="images/sarape.jpg" alt="" class="product__img">
+            <div class="product__description" id="div3" name="DIVS">
+
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+
+          <div class="product">
+            <img src="images/mueganos.jpeg" alt="" class="product__img">
+            <div class="product__description" id="div4" name="DIVS">
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+        </div>
+
+        <section id="show__buy">
+          <div id="todo" class="todoNo">
+      			<div id="menu" class="menuNo">
+      				<!--Botones de compra-->
+      				<div id="divbotones">
+      					<input type="button" id="botonTotal" value="Calcular total" class="welcome__btn">
+      				</div>
+      				<!--zona de compra, tablas, formularios, etc.-->
+      				<div id="divZonaCompra" class="divZonaCompraNo">
+      					<!--Carrito de la compra-->
+      					<div id="divTotal" class="divsNo">
+      						<p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+      						<table id="tablaTotal"></table>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+          <div id="check">
+            <label for="">Acepto Terminos y condiciones</label> <input type="checkbox" name="accept" class="required" required><br>
+            <input type="submit" name="" value="Enviar" class="welcome__btn" required>
+            <input type="reset" name="" value="Limpiar" class="welcome__btn">
+          </div>
+        </section>
+    </form>
+  </body>
+</html>

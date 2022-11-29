@@ -12,6 +12,7 @@
     <script type="text/javascript" src="js/menu.js" defer></script>
     <script type="text/javascript" src="js/slider.js" defer></script>
     <script type="text/javascript" src="js/reloj.js" defer></script>
+    <script type="text/javascript" src="js/openWeather.js" defer></script>
     <title>Bienvenido a Tlaxcala</title>
   </head>
 
@@ -125,16 +126,21 @@
     <footer class="main-footer">
       <div class="container">
         <div class="column column--50-25">
+          <div class="weather loading">
+            <h2 class="city footer__title"></h2>
+            <h1 class="temp"></h1>
+            <div class="">
+              <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+            </div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+          </div>
+        </div>
+        <div class="column column--50-25">
+
           <h2 class="footer__title">¿Quiénes somos?</h2>
           <p class="footer__txt">Somos jovenes Tlaxcaltecas que tuvieron la idea de dar a conocer el estado de tlaxcala, para que todo aquel que visitase la página web pueda entender lo marilloso que es el estado y sus xtraordinaria cultura que ofrece a México</p>
           <cite class="footer__author">- Daniel, VR & Diana, QP</cite>
-        </div>
-        <div class="column column--50-25">
-          <h2 class="footer__title">Comentarios</h2>
-          <p class="footer__txt"><i class="fa-solid fa-thumbs-up"></i> Tlaxcala es un gran estado, lleno de maravillosos lugares, increible gastronomia y hermosas tradiciones.</p>
-
-          <p class="footer__txt"><i class="fa-solid fa-thumbs-down"></i> Tlaxcala NO existe.</p>
-
         </div>
         <div class="column column--50-25">
           <h2 class="footer__title">Siguenos en las Redes</h2>
